@@ -1,0 +1,319 @@
+body {
+    background-image: url(img/bg.jpg);
+    background-size: contain;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+input,
+textarea {
+    font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 30px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.page-header a.logo {
+    text-decoration: none;
+    width: 25%;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+    .page-header a.logo {
+        width: 15%;
+    }
+}
+
+.page-header .page-menu {
+    width: 50%;
+    displ;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.page-header .page-menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .page-header .page-menu {
+        display: flex;
+    }
+}
+
+.page-header .page-menu ul li {
+    margin-left: 20px;
+    display: block;
+}
+
+.page-header .page-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.page-header .page-menu ul li a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.main-page {
+    margin-bottom: 30px;
+}
+
+
+.title {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+
+h1 {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+
+.skills {
+    margin-bottom: 25px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 600;
+    margin: 20px 50px;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        width: 100%;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        width: 48%;
+    }
+
+}
+
+
+.skill-progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding-left: 45px;
+    padding-right: 10px;
+    color: #333;
+    width: 0px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 247);
+}
+
+
+.skill-progress.coolness {
+    animation-name: coolness-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes coolness-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+.skill-progress.humour {
+    animation-name: humour-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes humour-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+.skill-progress.cuteness {
+    animation-name: cuteness-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cuteness-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+.skill-progress.cringe {
+    animation-name: cringe-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cringe-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 5%;
+    }
+}
+
+
+legend {
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.fieldset-item {
+    margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    fieldset.contact {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    fieldset.contact legend {
+        width: 100%;
+    }
+
+    fieldset.contact .fieldset-item {
+        width: 48%;
+    }
+}
+
+.fieldset-item label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+}
+
+.fieldset-item input[type="text"],
+.fieldset-item input[type="tel"],
+textarea {
+    padding: 8px 15px;
+    border: 1px solid #aaaaaa;
+    width: 100%;
+    border-radius: 12px;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+.form button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #8f16be;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: #8f16be;
+    cursor: pointer;
+    border-color: #8f16be;
+    box-shadow: 0px 0px 10px rgb(228, 139, 198);
+}
+
+
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.footer a {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.footer img {
+    width: 15%;
+    max-width: 60px;
+}
